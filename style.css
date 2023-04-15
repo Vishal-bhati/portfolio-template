@@ -1,0 +1,322 @@
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--dark-navy), var(--navy));;
+    
+}
+#left-side{
+    background-color: var(--green);
+    z-index:2;
+}
+
+#right-side{
+    background-color: rgb(227, 227, 0);
+}
+
+.name{
+    display: grid;
+    margin-top: 10vw;
+    position: absolute;
+    margin-left: 20vw;
+    overflow: hidden;
+    position: absolute;
+}
+h3{
+    margin: 0px 0px 30px 4px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-weight: 400;
+    align-items: center;
+   
+}
+h1{
+    margin: 0;
+    display: flex;
+    color: var(--lightest-slate);
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: clamp(40px, 8vw, 80px);
+    margin-bottom: 0;
+    letter-spacing: -5px;
+    line-height: 1;
+}
+
+
+.second-heading{
+    color: var(--light-slate);
+    letter-spacing: -5px;
+    margin: 0;
+}
+.paragraph{
+    color: var(--light-slate);
+    font-size: 1.5rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.button{
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm);
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
+}
+.butsaton:hover{
+    background-color: var(--green);
+    color: var(--navy);
+}
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+   
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: var(--lightest-slate);
+    font-family: var(--font-mono);
+   
+    
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    
+
+}
+
+.action_btn{
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: 20px;
+    font-size: var(--fz-xs);
+}
+.action_btn:hover{
+    background-color: var(--green);
+    color: var(--navy);
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+    margin-left: 60vw;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.links_2{
+    writing-mode: vertical-lr;
+    display: flex;
+    gap: 2rem;
+    margin-top: 30vw;
+    margin-left: 10px;
+    position: sticky;
+}
+
+.long{
+    color: #fff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 20rem;
+}
+.button {
+    --color: var(--green);
+    font-family: sans-serif;
+    display: inline-block;
+    width: 8em;
+    height: 4.6em;
+    line-height: 2.5em;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: bolder;
+    color: var(--color);
+   }
+   
+   .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .button:hover {
+    color: #fff;
+   }
+   
+   .button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+
+   .button1 {
+    font-size: 28px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .button1:focus,
+  button:hover {
+    color: #fff;
+  }
+  
+  .button1:focus:after,
+  .button1:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .button1:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+
+
+
+  .card {
+    width: 210px;
+    height: 254px;
+    border-radius: 4px;
+    background: var(--navy);
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+    margin-top: 30vw;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-weight: bolder;
+   
+  }
+  
+  .card a {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: var(--navy);
+    border: 1px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card a:hover {
+    flex: 4;
+  }
+  
+  .card a span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: var(--green);
+    letter-spacing: .1em;
+  }
+  
+  .card a:hover span {
+    transform: rotate(0);
+  }
